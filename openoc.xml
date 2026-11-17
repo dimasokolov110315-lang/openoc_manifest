@@ -11,7 +11,7 @@
   <remote name="alice"     fetch="https://github.com/Project-Nightcord" />
   <remote name="mi-thorium" fetch="https://github.com/Mi-Thorium" />
   <remote name="kaguya"    fetch="https://github.com/imren0x" />
-  <remote name="ghssh"     fetch="git@github.com:" />
+  <remote name="ghssh"     fetch="ssh://git@github.com/" />
 
   <!-- MiThorium common: unified device layer for the msm8953 family -->
   <project path="device/xiaomi/mithorium-common" name="android_device_xiaomi_mithorium-common" groups="device" remote="alice" revision="lineage-22.2" />
