@@ -104,6 +104,13 @@
        lineage-sdk defaults (livedisplay / touch / health) -->
   <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" />
 
+  <!-- QCOM telephony extensions: telephony-ext boot jar (required by mithorium) -->
+  <project path="vendor/codeaurora/telephony" name="LineageOS/android_vendor_codeaurora_telephony" groups="qcom,qssi" />
+
+  <!-- QCOM USB HAL: android.hardware.usb.gadget-service.qti boot jar,
+       also referenced by PRODUCT_SOONG_NAMESPACES (vendor/qcom/opensource/usb/etc) -->
+  <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,lanai-vendor" />
+
   <!-- ============================================= -->
   <!--  Network triage (flaky-link slimming)         -->
   <!--  Emulator/test trees are irrelevant for a     -->
