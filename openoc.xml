@@ -96,6 +96,14 @@
   <!-- Lineage vendor tree: envsetup hooks + release configs + lineage props -->
   <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
 
+  <!-- LineageSDK: org.lineageos.platform (boot jar), org.lineageos.platform-res,
+       org.lineageos.platform.internal (linked by frameworks/base services) -->
+  <project path="lineage-sdk" name="LineageOS/android_lineage-sdk" />
+
+  <!-- Lineage HIDL interfaces: generate vendor.lineage.*-java libs used by
+       lineage-sdk defaults (livedisplay / touch / health) -->
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" />
+
   <!-- ============================================= -->
   <!--  Network triage (flaky-link slimming)         -->
   <!--  Emulator/test trees are irrelevant for a     -->
