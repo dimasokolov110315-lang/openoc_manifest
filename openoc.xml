@@ -62,4 +62,21 @@
   <!-- Release signing config glue -->
   <project path="vendor/lineage-priv" name="vendor_extra" remote="alice" revision="14" />
 
+  <!-- ============================================= -->
+  <!--  Network triage (flaky-link slimming)         -->
+  <!--  Emulator/test trees are irrelevant for a     -->
+  <!--  mido device build; huge full-history fetches -->
+  <!--  (cts, icu, frameworks/base) get depth 1.     -->
+  <!-- ============================================= -->
+  <remove-project name="platform/prebuilts/qemu-kernel" />
+  <remove-project name="platform/prebuilts/runtime" />
+  <remove-project name="kernel/prebuilts/6.1/arm64" />
+  <remove-project name="platform/cts" />
+
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" clone-depth="1" />
+
+  <remove-project name="platform/external/icu" />
+  <project path="external/icu" name="platform/external/icu" remote="aosp" groups="pdk" clone-depth="1" />
+
 </manifest>
