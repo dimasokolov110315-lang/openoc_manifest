@@ -64,6 +64,9 @@
   <!-- Release signing config glue -->
   <project path="vendor/lineage-priv" name="vendor_extra" remote="alice" revision="14" />
 
+  <!-- Lineage vendor tree: envsetup hooks + release configs + lineage props -->
+  <project path="vendor/lineage" name="LineageOS/android_vendor_lineage" />
+
   <!-- ============================================= -->
   <!--  Network triage (flaky-link slimming)         -->
   <!--  Emulator/test trees are irrelevant for a     -->
